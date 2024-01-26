@@ -34,6 +34,7 @@ public class MsgLog {
         this.tryCount = 0;
 
         Date date = new Date();
+        Date date = new Date();
         this.createTime = date;
         this.updateTime = date;
         this.nextTryTime = (JodaTimeUtil.plusMinutes(date, 1));
