@@ -108,6 +108,7 @@ public class UserServiceImpl implements UserService {
 
         MsgLog msgLog = new MsgLog(msgId, loginLog, RabbitConfig.LOGIN_LOG_EXCHANGE_NAME, RabbitConfig.LOGIN_LOG_ROUTING_KEY_NAME);
         msgLogMapper.insert(msgLog);
+        msgLogMapper.insert(msgLog);
     }
 
     @Override
