@@ -55,7 +55,7 @@
     <select id="selectByUsernameAndPassword" resultMap="BaseResultMap" parameterType="string">
         SELECT
         <include refid="Base_Column_List" />
-        FROM t_user
+        FROM  t_user
         where username = #{username} and password = #{password}
     </select>
 
